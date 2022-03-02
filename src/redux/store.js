@@ -3,7 +3,6 @@ import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 import missionsReducer from './missions/missions';
 
-<<<<<<< HEAD
 const reducer = combineReducers({
   missionsReducer,
 });
@@ -16,10 +15,3 @@ const store = createStore(
 );
 
 export default store;
-=======
-// export const store = configureStore({
-//     reducer: {
-
-//     },
-// });
->>>>>>> development
