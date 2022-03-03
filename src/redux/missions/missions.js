@@ -16,7 +16,7 @@ export const joinMission = (id) => ({
   id,
 });
 
-export const leaveMission = () => ({
+export const leaveMission = (id) => ({
   type: LEAVE_MISSION,
   id,
 });
@@ -39,7 +39,6 @@ const missionsReducer = (state = initialState, action) => {
       return [...action.payload];
 
     case JOIN_MISSION: {
-      console.log(state);
       const newState = state.map((mission) => {
         if (mission.id !== action.id) {
           return mission;

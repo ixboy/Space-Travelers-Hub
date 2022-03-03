@@ -1,10 +1,8 @@
-import { useSelector } from "react-redux";
-import { Table } from "react-bootstrap";
+import { useSelector } from 'react-redux';
+import { Table } from 'react-bootstrap';
 
 const Missions = () => {
   const missions = useSelector((state) => state.missionsReducer);
-  // let reserved = false;
-  console.log(missions);
 
   return (
     <div className="container">
@@ -14,7 +12,6 @@ const Missions = () => {
             <th>Missions</th>
             <th>Description</th>
             <th>Status</th>
-            <th></th>
           </tr>
         </thead>
 
@@ -34,9 +31,9 @@ const Missions = () => {
               <td className="align-middle fs wdt">
                 {
                   element.reserved ? (
-                    <button className="btn-outline-secondary rounded py-2">LEAVE MISSION</button>
+                    <button type="button" className="btn-outline-secondary rounded py-2">LEAVE MISSION</button>
                   ) : (
-                    <button className="btn-outline-secondary rounded py-2">JOIN MISSION</button>
+                    <button type="button" className="btn-outline-secondary rounded py-2">JOIN MISSION</button>
                   )
                 }
 
