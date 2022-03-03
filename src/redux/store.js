@@ -19,7 +19,7 @@ if (process.env.NODE_ENV === 'development') {
   composeEnhancers = compose;
 }
 const reducer = combineReducers({
-  missionsReducer, rocketsReducer
+  missionsReducer, rocketsReducer,
 });
 
 const store = createStore(
