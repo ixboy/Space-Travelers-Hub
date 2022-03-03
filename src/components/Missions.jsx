@@ -1,6 +1,9 @@
-import { useSelector, useDispatch } from 'react-redux';
-import { Table } from 'react-bootstrap';
+/* eslint-disable import/order */
+
 import { joinMission, leaveMission } from '../redux/missions/missions';
+import { useDispatch, useSelector } from 'react-redux';
+
+import { Table } from 'react-bootstrap';
 
 const Missions = () => {
   const missions = useSelector((state) => state.missionsReducer);
@@ -12,7 +15,7 @@ const Missions = () => {
 
   const handleLeaveMission = (id) => {
     dispatch(leaveMission(id));
-  }
+  };
 
   return (
     <div className="container">
