@@ -1,15 +1,18 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { Table } from 'react-bootstrap';
-import { joinMission } from '../redux/missions/missions';
+import { joinMission, leaveMission } from '../redux/missions/missions';
 
 const Missions = () => {
   const missions = useSelector((state) => state.missionsReducer);
   const dispatch = useDispatch();
 
   const handleJoinMission = (id) => {
-    console.log(id);
     dispatch(joinMission(id));
   };
+
+  const handleLeaveMission = (id) => {
+    dispatch(leaveMission(id));
+  }
 
   return (
     <div className="container">
@@ -43,6 +46,9 @@ const Missions = () => {
                     <button
                       type="button"
                       className="btn-outline-secondary rounded py-2"
+                      onClick={() => {
+                        handleLeaveMission(element.id);
+                      }}
                     >
                       LEAVE MISSION
                     </button>
@@ -58,9 +64,7 @@ const Missions = () => {
                     </button>
                   )
                 }
-
               </td>
-
             </tr>
           ))}
         </tbody>
