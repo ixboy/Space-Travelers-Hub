@@ -1,15 +1,8 @@
-.fs {
-  font-size: 0.7rem;
+.App {
+  text-align: left;
 }
 
-.wdt {
-  width: 10%;
-}
-
-.fc {
-  color: #fff;
-}
-
-.mg-0 {
-  margin: 0;
+.mainDiv img {
+  max-width: 250px;
+  padding-right: 1.5rem;
 }
