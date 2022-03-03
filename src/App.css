@@ -10,6 +10,19 @@
   color: #fff;
 }
 
-.mg-0 {
-  margin: 0;
+.fc-red {
+  color: red;
+}
+
+.vh {
+  height: 80vh;
+}
+
+.list-style {
+  list-style: none;
+}
+
+.vector {
+  width: 1px;
+  height: 25px;
 }
