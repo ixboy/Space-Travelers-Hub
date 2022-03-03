@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { Table } from 'react-bootstrap';
-import { joinMission, leaveMission } from '../redux/missions/missions';
+import { joinMission } from '../redux/missions/missions';
 
 const Missions = () => {
   const missions = useSelector((state) => state.missionsReducer);
@@ -51,7 +51,7 @@ const Missions = () => {
                       type="button"
                       className="btn-outline-secondary rounded py-2"
                       onClick={() => {
-                        handleJoinMission(element.id)
+                        handleJoinMission(element.id);
                       }}
                     >
                       JOIN MISSION
