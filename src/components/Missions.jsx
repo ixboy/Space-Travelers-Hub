@@ -3,6 +3,8 @@ import { Table } from "react-bootstrap";
 
 const Missions = () => {
   const missions = useSelector((state) => state.missionsReducer);
+  // let reserved = false;
+  console.log(missions);
 
   return (
     <div className="container">
@@ -18,11 +20,28 @@ const Missions = () => {
 
         <tbody>
           {missions.map((element) => (
-            <tr key={element.mission_id}>
-              <td>{element.mission_name}</td>
+            <tr key={element.id}>
+              <td>{element.name}</td>
               <td>{element.description}</td>
-              <td className="align-middle wdt"><p className="fs bg-secondary text-center rounded fc mg-0">NOT A MEMBER</p> </td>
-              <td className="align-middle fs wdt"><button className="btn-outline-secondary rounded py-2">JOIN MISSION</button></td>
+              <td className="align-middle wdt">
+                {element.reserved ? (
+                  <p className="fs bg-secondary text-center rounded fc mg-0 p-1">Active Member</p>
+                ) : (
+                  <p className="fs bg-secondary text-center rounded fc mg-0 p-1">NOT A MEMBER</p>
+                )}
+              </td>
+
+              <td className="align-middle fs wdt">
+                {
+                  element.reserved ? (
+                    <button className="btn-outline-secondary rounded py-2">LEAVE MISSION</button>
+                  ) : (
+                    <button className="btn-outline-secondary rounded py-2">JOIN MISSION</button>
+                  )
+                }
+
+              </td>
+
             </tr>
           ))}
         </tbody>
