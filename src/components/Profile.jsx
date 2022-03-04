@@ -19,9 +19,9 @@ const MyProfile = () => {
         </div>
       ) : (
 
-        <div className="border border-2 rounded">
-          <h4 className="p-3">No missions reserved</h4>
-        </div>
+    <div className="border border-2 rounded">
+    <h4 className="p-3">No missions reserved</h4>
+    </div>
       )}
       {joinedRockets.length ? (
         <div>
