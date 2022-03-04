@@ -31,5 +31,9 @@ describe('Group of tests for Rockets page', () => {
     expect(container).toHaveTextContent('by SpaceX during 2006-2009');
   });
 
-
+  test('If reserved = "true" button text should be, Cancel reservation', () => {
+    const { container } = render(<Provider store={store}><RocketList /></Provider>);
+    const listbtn2 = container.querySelector('.btn2');
+    expect(listbtn2).toHaveTextContent('Cancel reservation');
+  });
 });
