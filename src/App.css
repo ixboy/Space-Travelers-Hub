@@ -1,5 +1,5 @@
-.fs {
-  font-size: 0.7rem;
+.App {
+  text-align: left;
 }
 
 .wdt {
@@ -26,3 +26,9 @@
   width: 1px;
   height: 25px;
 }
+
+.mainDiv img {
+  max-width: 250px;
+  padding-right: 1.5rem;
+}
+
