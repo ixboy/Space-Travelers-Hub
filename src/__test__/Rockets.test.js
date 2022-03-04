@@ -2,9 +2,9 @@ import '@testing-library/jest-dom';
 
 import { Provider } from 'react-redux';
 import React from 'react';
-import RocketList from '../components/Rockets';
 import { render } from '@testing-library/react';
 import renderer from 'react-test-renderer';
+import RocketList from '../components/Rockets';
 import store from '../redux/store';
 
 jest.mock('../components/Rockets');
