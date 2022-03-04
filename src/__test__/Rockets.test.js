@@ -17,5 +17,13 @@ describe('Group of tests for Rockets page', () => {
     expect(list).toMatchSnapshot();
   });
 
-  
+  test('List is created', () => {
+    const { container } = render(<Provider store={store}><RocketList /></Provider>);
+    const list = container.querySelector('.container-fluid');
+    expect(list).toBeInTheDocument();
+    expect(container).toHaveTextContent('The Falcon 1');
+    expect(container).toHaveTextContent('by SpaceX during 2006-2009');
+  });
+
+
 });
