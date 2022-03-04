@@ -25,5 +25,11 @@ describe('Group of tests for Rockets page', () => {
     expect(container).toHaveTextContent('by SpaceX during 2006-2009');
   });
 
+  test('The Rocket discription should have the words Falcon, SpaceX, etc...', () => {
+    const { container } = render(<Provider store={store}><RocketList /></Provider>);
+    expect(container).toHaveTextContent('The Falcon 1');
+    expect(container).toHaveTextContent('by SpaceX during 2006-2009');
+  });
+
 
 });
