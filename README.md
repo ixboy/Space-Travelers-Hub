@@ -1,44 +1,69 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-## Available Scripts
+# Space Traveler's Hub
 
-In the project directory, you can run:
+> Space Traveler's Hub is a project built with React redux, implemented with `Ducks` files structure and, React Router to interact between the different tabs of the project. In the Rockets tab, you can reserve or cancel a rocket, in the Missions tab you can join and leave a mission, and finally My Profile tab you find your current missions and rockets.
 
-### `npm start`
+![rockets](https://user-images.githubusercontent.com/91301423/156767747-742c3464-b9c6-4109-89a8-e6725a791e11.png)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Built With
 
-### `npm test`
+- HTML/CSS
+- JavaScript
+- React Framework
+- Redux
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Live Demo
 
-### `npm run build`
+[Demo link](https://ixboy.github.io/Space-Travelers-Hub/).
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+To get a local copy up and running follow these simple example steps.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Clone this repository with git clone `https://github.com/ixboy/Space-Travelers-Hub.git` using your terminal or command line.
+- Change to the project directory by entering : <br>
+  `cd Space-Travelers-Hub` in the terminal
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+You should install in your local machine the last version of [React](https://en.reactjs.org/).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Setup
 
-## Learn More
+You can clone this repository using the next command: `git clone https://github.com/ixboy/Space-Travelers-Hub.git`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+After clone the repository, you should to run `npm install` since the terminal to install all dependencies needed to the correct working of the project.
+
+### Usage
+
+You're free to use this project however it is developed for educational purposes. You can check the acknowledgment described below.
+
+## Authors
+
+👤 **Iyunda Ismael Antonio**
+
+- GitHub: [@ixboy](https://github.com/ixboy)
+- Twitter: [@ismaelixboy](https://twitter.com/ismaelixboy)
+- LinkedIn: [ismael-antonio](https://www.linkedin.com/in/ismaelantonio/)
+
+👤 **Fernando Herrera**
+
+- GitHub: [@fherrerao](https://github.com/fherrerao)
+- LinkedIn: [@fernando](https://www.linkedin.com/in/fernando-herrera-25a6361b2/)
+- Twitter: [@fherrera0206](https://twitter.com/fherrera0206)
+
+## Acknowledgments
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
