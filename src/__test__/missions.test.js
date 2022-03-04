@@ -1,4 +1,4 @@
-import missionsReducer from "../redux/missions/missions";
+import missionsReducer from '../redux/missions/missions';
 
 describe('Testing display, join and leave missions', () => {
   test('Display missions', () => {
